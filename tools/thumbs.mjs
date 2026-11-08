@@ -22,6 +22,7 @@ const SOURCES = {
   poker: 'poker/docs/screenshots/hero.jpg',
   chess: 'chess/docs/screenshots/hero.jpg',
   go: 'go/docs/screenshots/opening.jpg',
+  mastermind: 'mastermind/docs/screenshots/hero.jpg',
 };
 
 fs.mkdirSync(OUT, { recursive: true });

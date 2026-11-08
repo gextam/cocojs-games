@@ -5,6 +5,9 @@
 #   tools/deploy.sh hub        # launch page + thumbnails only
 #   tools/deploy.sh roulette   # one game, by its URL name
 #
+# Mastermind is not copied here: it runs as a Node service (mastermind/tools/deploy.sh) and Apache
+# proxies /games/mastermind to it; only its launch-page card and thumbnail live in this project.
+#
 # Needs an SSH alias for the server (default "contabo", override with DEPLOY_HOST) that logs in as
 # root, and the game folders checked out next to this one (see SRC below). Files are streamed as a
 # tar archive over SSH, then owned by the cPanel user with 755/644 permissions.
